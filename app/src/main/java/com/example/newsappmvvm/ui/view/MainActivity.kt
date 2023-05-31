@@ -13,6 +13,7 @@ import com.example.newsappmvvm.databinding.ActivityMainBinding
 import com.example.newsappmvvm.databinding.ItemNewsBinding
 import com.example.newsappmvvm.ui.adapter.NewsAdapter
 import com.example.newsappmvvm.ui.viewmodel.NewsViewModel
+import java.util.function.Consumer
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
@@ -28,7 +29,6 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         val view = binding.root
         setContentView(view)
-
 
         binding.newsRv.apply {
             layoutManager = LinearLayoutManager(this@MainActivity)
